@@ -6,20 +6,45 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from "react-native";
 import { StatusBar } from 'react-native';
-import DestinationSearch from './src/screens/destinationSearch';
+import LoginScreen from './src/screens/LoginScreen';
+import HomeScreen from './src/screens/HomeScreen'
 
-const App: () => Node = () => {
+class App extends Component {
+  state = {
+    loggedIn: false,
+  }
 
-  return (
-    <View>
-      <StatusBar barStyle="dark-content" />
+  renderComponent = () => {
+    switch (this.state.loggedIn) {
+      case false:
+        return <LoginScreen />
 
-      <DestinationSearch />
-    </View>
-  );
-};
+      case true:
+        return <HomeScreen />
+    }
+  }
+
+  render() {
+    return (
+      <View>
+        {this.renderComponent()}
+      </View>
+    );
+  }
+}
+
+// const App: () => Node = () => {
+
+//   return (
+//     <View>
+//       <StatusBar barStyle="dark-content" />
+
+//       <LoginScreen />
+//     </View>
+//   );
+// };
 
 export default App;

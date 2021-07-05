@@ -22,12 +22,13 @@ const destinationSearch = (props) => {
 
                 <GooglePlacesAutocomplete
                     placeholder='Search'
+
                     onPress={(data, details = null) => {
                         // 'details' is provided when fetchDetails = true
                         console.log(data, details);
                     }}
                     query={{
-                        key: 'AIzaSyAyTzROc_wrO-16oCrvH07HLDXPMT9jigl',
+                        Key: "AIzaSyAOQWitO0Xq85ynVfFsyZaLBDjrIqNBkbQ",
                         language: 'en',
                     }}
                 />

@@ -2,22 +2,22 @@ import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
     container: {
-        height: 100,
+        height: 70,
         backgroundColor: "blue",
-        padding: 10,
+        padding: 2,
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10
     },
     title: {
         color: "white",
-        fontSize: 25,
+        fontSize: 20,
         fontWeight: "bold",
-        marginBottom: 10,
+        marginBottom: 1,
     },
     text: {
         color: "white",
         fontSize: 15,
-        marginBottom: 10,
+        marginBottom: 1,
     },
     learnmore: {
         color: "white",

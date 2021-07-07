@@ -32,7 +32,7 @@ const HomeSearch = (props) => {
             {/*home destination*/}
             <View style={style.row}>
                 <View style={[style.iconContainer, { BackgroundColor: '#218cff' }]}>
-                    <Entypo name={"home"} size={20} color={'#ffffff'} />
+                    <Entypo name={"home"} size={20} color={'blue'} />
                 </View>
                 <Text style={style.destinationText}>Home</Text>
             </View>

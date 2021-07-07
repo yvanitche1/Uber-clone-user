@@ -6,7 +6,7 @@ const style = StyleSheet.create({
         // justifyContent: "space-between",
         width: "100%",
         height: "100%",
-        backgroundColor: "gray"
+
     },
 })
 
